@@ -26,7 +26,9 @@ export interface IUser {
 }
 
 export const getUsers = () => {
-  return apiClient.get<IUser[]>("users").then((resp) => resp.data);
+  return apiClient.get<IUser[]>("users").then((resp) => {
+    return resp.data.sort((a, b) => a.username.localeCompare(b.username)); //sorted data
+  });
 };
 
 export const useGetUsers = () => {
