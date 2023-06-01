@@ -1,0 +1,23 @@
+.user-posts-container {
+  padding: 60px;
+  .search-input {
+    margin-bottom: 20px;
+  }
+  .post-wrapper {
+    margin-bottom: 30px;
+    background: rgb(49 49 49 / 54%);;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    position: relative;
+    .close-icon {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+    }
+    .post-title {
+      margin-bottom: 10px;
+    }
+  }
+}
